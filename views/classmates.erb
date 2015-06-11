@@ -1,0 +1,20 @@
+<title><%= @user.name %>'s Classmates</title>
+
+
+<% @courses.each do |course| %>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">Period <%= course.period %> • <%= course.title %> • <%= course.teacher %> • <%= course.room %></div>
+    </div>
+
+    <% students = course.users %>
+    <% students.each do |student| %>
+        <ul class="list-group">
+          <li class="list-group-item"><%= student.name %></li>
+        </ul>
+    <% end %>
+
+    <br>
+<% end %>
+
+

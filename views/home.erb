@@ -1,0 +1,24 @@
+<title>Home</title>
+
+<div class="instructions navbar-default navbar">
+  <div><i class="glyphicon glyphicon-circle-arrow-right"></i> Log in to the <a target="_blank" href="https://hac.westport.k12.ct.us/HomeAccess/Account/LogOn?ReturnUrl=%2fhomeaccess">Westport Home Access</a> website</div>
+  <div><i class="glyphicon glyphicon-hand-down"></i> Click on the classes tab at the top</div>
+  <div><i class="glyphicon glyphicon-calendar"></i> Next select the schedule tab</div>
+  <div><i class="glyphicon glyphicon-import"></i> Simply copy and paste the table of your classes into the text box below</div>
+  <div><i class="glyphicon glyphicon-thumbs-up"></i> View your generated schedule and see who's in your classes!</div>
+</div>
+<div class="space instructions navbar-default navbar fixed-width">
+  <div><i class="glyphicon glyphicon-list-alt"></i> Already input your schedule?</div>
+  <div><i class="glyphicon glyphicon-menu-right"></i> Click on the classmates tab above to see your classmates. </div>
+  <div><i class="glyphicon glyphicon-menu-right"></i> Need to edit your classes? </div>
+  <div><i class="glyphicon glyphicon-question-sign"></i> Click on the edit tab above.</div>
+  <div><i class="glyphicon glyphicon-gift"></i> Thanks for using this program!</div>
+</div>
+<form method="post" class="form-inline" action="/generate">
+  <textarea name="pasted" class="form-control" rows="14" cols="160" placeholder="Paste your HAC schedule here (don't worry if the formatting gets messed up)."></textarea>
+  <br>
+  <div class="center">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+

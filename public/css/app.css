@@ -1,0 +1,58 @@
+.white {
+    color: lightgray;
+}
+
+.instructions {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    font-size: 16px;
+    float: left;
+    width: 49.5%;
+    line-height: 20px;
+}
+
+.right {
+   float: right;
+}
+
+.rjustified {
+    float: right;
+    margin-left: 90%;
+}
+.blue {
+    background-color: lightskyblue;
+}
+
+.tabbed {
+    margin-left: 25px;
+}
+.fixed-width {
+    width: 50%;
+}
+
+.glyphicon {
+    color: purple;
+    font-size: 20px;
+}
+
+.purple {
+    color: purple;
+    font-size: 20px;
+}
+.space {
+    float: right;
+    line-height: 22px;
+    padding-bottom: 8px;
+    padding-top: 7px;
+}
+.center {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.large {
+    font-size: 15px;
+}
+
