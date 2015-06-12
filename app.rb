@@ -96,10 +96,9 @@ helpers do
 end
 
 get '/classmates' do
-  erb :classmates
-end
+  @user = User.first(:token => session[:user_token])
+  @courses = @user.courses
 
-post '/classmates' do
   erb :classmates
 end
 
@@ -138,6 +137,6 @@ post '/generate' do
   @courses = @user.courses
 
   # change erb to redirect
-  erb :classmates
+  redirect '/classmates'
 
 end
