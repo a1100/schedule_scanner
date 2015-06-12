@@ -96,14 +96,23 @@ helpers do
 end
 
 get '/classmates' do
+  if authenticated?
   @user = User.first(:token => session[:user_token])
   @courses = @user.courses
 
   erb :classmates
+  else
+    redirect '/auth/google'
+    end
 end
 
 get '/generate' do
-  erb :classmates
+  if authenticated?
+    redirect '/classmates'
+  else
+    redirect '/auth/google'
+  end
+  #erb :classmates
 end
 
 post '/generate' do
